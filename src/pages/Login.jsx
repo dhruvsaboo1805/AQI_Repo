@@ -67,7 +67,7 @@ const Login = () => {
                         onChange={handleChange}
                         type='email'
                         name='email'
-                        placeholder='Enter your email...'
+                        placeholder='Test -> ak@gmail.com'
                         value={loginInfo.email}
                     />
                 </div>
@@ -77,13 +77,13 @@ const Login = () => {
                         onChange={handleChange}
                         type='password'
                         name='password'
-                        placeholder='Enter your password...'
+                        placeholder='Test -> 09876543'
                         value={loginInfo.password}
                     />
                 </div>
                 <button type='submit'>Login</button>
                 <span>Doesn't have an account?
-                    <Link to="/signup">Signup</Link>
+                    <Link to="/signup" >Signup</Link>
                 </span>
             </form>
             <ToastContainer />
