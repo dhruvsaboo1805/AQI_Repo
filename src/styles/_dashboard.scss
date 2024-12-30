@@ -1,0 +1,85 @@
+.dashboard {
+	overflow-y: auto;
+  
+	// First row: Map and CircularProgressBar
+	.map-and-widget {
+	  display: flex;
+	  justify-content: space-between;
+	  margin-top: 2rem;
+	  
+	  .widget-container {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	  }
+  
+	  .map-container {
+		width: 60%;
+		margin-right: 2rem;
+	  }
+  
+	  .widget-info {
+		width: 35%;
+		padding: 16px;
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	  }
+	}
+  
+	// Second row: AQI Bars and Bar Chart
+	.aqi-bars-and-chart {
+	  display: flex;
+	//   flex-direction: row-reverse;
+	  justify-content: space-between;
+	  margin-top: -10rem;
+	  margin-left: 20px;
+  
+	  .aqi-bars {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr); // Two per row
+		gap: 0.7rem;
+		width: 48%;
+		
+		.aqi-level {
+		  height: 20px;
+		  width: 100%;
+		  margin-bottom: 1rem;
+		  font-size: 15px;
+		}
+	  }
+  
+	  .bar-chart-container {
+		width: 48%;
+	  }
+	}
+  }
+  
+//   @media screen and (max-width: 767px) {
+// 	.map-and-widget {
+// 	  flex-direction: column;
+// 	  align-items: center;
+	  
+// 	  .map-container,
+// 	  .widget-info {
+// 		width: 100%;
+// 		margin-bottom: 1rem;
+// 	  }
+// 	}
+  
+// 	.aqi-bars-and-chart {
+// 	  flex-direction: column;
+// 	  align-items: center;
+  
+// 	  .aqi-bars {
+// 		width: 100%;
+// 		grid-template-columns: repeat(1, 1fr); // One per row on mobile
+// 	  }
+  
+// 	  .bar-chart-container {
+// 		width: 100%;
+// 		margin-top: 2rem;
+// 	  }
+// 	}
+//   }
+  
